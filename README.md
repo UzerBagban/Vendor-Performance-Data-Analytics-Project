@@ -35,17 +35,17 @@ This project directly answers typical issues encountered by future data analysts
 
 • Python:
 
-   o pandas: For data manipulation and analysis.
-   
-   o sqlite3 (standard library): For working with the SQLite database.
-   
-   o sqlalchemy: For creating and managing database engines.
-   
-   o matplotlib & seaborn: For data visualization in notebooks.
-   
-   o scipy.stats: For statistical analysis and hypothesis testing.
-   
-   o os, logging, time: For utility functions and logging.
+      o pandas: For data manipulation and analysis.
+      
+      o sqlite3 (standard library): For working with the SQLite database.
+      
+      o sqlalchemy: For creating and managing database engines.
+      
+      o matplotlib & seaborn: For data visualization in notebooks.
+      
+      o scipy.stats: For statistical analysis and hypothesis testing.
+      
+      o os, logging, time: For utility functions and logging.
 
 • SQLite (.db files): The database system used to store all raw and processed data.
 
