@@ -35,17 +35,17 @@ This project directly answers typical issues encountered by future data analysts
 
 • Python:
 
-o pandas: For data manipulation and analysis.
-
-o sqlite3 (standard library): For working with the SQLite database.
-
-o sqlalchemy: For creating and managing database engines.
-
-o matplotlib & seaborn: For data visualization in notebooks.
-
-o scipy.stats: For statistical analysis and hypothesis testing.
-
-o os, logging, time: For utility functions and logging.
+   o pandas: For data manipulation and analysis.
+   
+   o sqlite3 (standard library): For working with the SQLite database.
+   
+   o sqlalchemy: For creating and managing database engines.
+   
+   o matplotlib & seaborn: For data visualization in notebooks.
+   
+   o scipy.stats: For statistical analysis and hypothesis testing.
+   
+   o os, logging, time: For utility functions and logging.
 
 • SQLite (.db files): The database system used to store all raw and processed data.
 
@@ -68,37 +68,37 @@ Read the steps below in sequence to operate the analysis and produce the insight
 
 1. Data Ingestion (ingestion.ipynb):
 
-o Open ingestion.ipynb in Jupyter Notebook.
-
-o Execute all cells. This notebook will handle reading the CSV files in the dataset/ directory and ingesting them into an SQLite database called inventory.db (which will be created in the root directory if it does not already exist).
-
-o A logs/ingestion_db.log file will be created in which the ingestion process will be tracked.
+   o Open ingestion.ipynb in Jupyter Notebook.
+   
+   o Execute all cells. This notebook will handle reading the CSV files in the dataset/ directory and ingesting them into an SQLite database called inventory.db (which will be created in the root directory if it does not already exist).
+   
+   o A logs/ingestion_db.log file will be created in which the ingestion process will be tracked.
 
 2. Exploratory Data Analysis (Exploratory_Data_Analysis.ipynb):
    
-o Run Exploratory_Data_Analysis.ipynb.
-
-o Run all cells. This notebook is connected to inventory.db, does some initial data cleaning, adds new calculated columns (e.g., GrossProfit, ProfitMargin, StockTurnover, SalesToPurchaseRatio), and creates a vendor_sales_summary table in the database for subsequent analysis.
-
-o Inspect the output cells for some preliminary insights into the dataset.
+   o Run Exploratory_Data_Analysis.ipynb.
+   
+   o Run all cells. This notebook is connected to inventory.db, does some initial data cleaning, adds new calculated columns (e.g., GrossProfit, ProfitMargin, StockTurnover, SalesToPurchaseRatio), and creates a vendor_sales_summary table in the database for subsequent analysis.
+   
+   o Inspect the output cells for some preliminary insights into the dataset.
 
 3. Vendor Performance Analysis (Vendor_Performance_Analysis.ipynb):
 
-o Open Vendor_Performance_Analysis.ipynb.
-
-o Execute all cells. This notebook does more advanced statistical analysis, such as hypothesis testing (e.g., comparing profit margins of top-performing vs. low-performing vendors using T-tests). It summarizes key insights that are essential for strategic decision-making.
+   o Open Vendor_Performance_Analysis.ipynb.
+   
+   o Execute all cells. This notebook does more advanced statistical analysis, such as hypothesis testing (e.g., comparing profit margins of top-performing vs. low-performing vendors using T-tests). It summarizes key insights that are essential for strategic decision-making.
 
 4. Have a look at the Analysis Report (Vendor_Performance_Analysis_Report.pdf):
 
-o Load the Vendor_Performance_Analysis_Report.pdf file to see a pre-made, detailed summary of project results, statistical verification, and ultimate recommendations.
+   o Load the Vendor_Performance_Analysis_Report.pdf file to see a pre-made, detailed summary of project results, statistical verification, and ultimate recommendations.
 
 5. Investigate the Dashboard (Vendor_Summary_Dashboard.pbix):
 
-o Launch the Vendor_Summary_Dashboard.pbix file in Power BI Desktop.
-
-o Note: You might need to update the data source connection in Power BI to reference your local inventory.db file. Open File > Options and settings > Data source settings, choose the source, click Change Source., and navigate to your inventory.db file. Finally, click Refresh on the Home tab.
-
-o Explore the dashboard interactively to view vendor performance metrics, trends, and key findings visually.
+   o Launch the Vendor_Summary_Dashboard.pbix file in Power BI Desktop.
+   
+   o Note: You might need to update the data source connection in Power BI to reference your local inventory.db file. Open File > Options and settings > Data source settings, choose the source, click Change Source., and navigate to your inventory.db file. Finally, click Refresh on the Home tab.
+   
+   o Explore the dashboard interactively to view vendor performance metrics, trends, and key findings visually.
 
 
 💡 Insights and Recommendations
